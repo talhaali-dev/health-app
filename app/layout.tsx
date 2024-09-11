@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Toaster } from "@/components/ui/toaster"
 import { Plus_Jakarta_Sans as FontSans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+
 
 import { cn } from "@/lib/utils";
 import Providers from "@/components/ProgressBarProvider";
@@ -37,8 +39,8 @@ export default function RootLayout({
       >
         {/* Progtessbar provider */}
         <Providers>
-
           <ThemeProvider attribute="class" defaultTheme="light">
+            <SpeedInsights />
             {children}
             <Toaster />
           </ThemeProvider>

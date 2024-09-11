@@ -18,6 +18,7 @@ import { Input } from "./ui/input";
 import { Select, SelectContent, SelectTrigger, SelectValue } from "./ui/select";
 import { Textarea } from "./ui/textarea";
 import { Switch } from "./ui/switch";
+import DatePicker from "react-datepicker";
 
 export enum FormFieldType {
   INPUT = "input",
@@ -139,7 +140,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
             className="ml-2"
           />
           <FormControl>
-            <ReactDatePicker
+            <DatePicker
               disabled={props.disabled}
               showTimeSelect={props.showTimeSelect ?? false}
               selected={field.value}
@@ -150,7 +151,7 @@ const RenderInput = ({ field, props }: { field: any; props: CustomProps }) => {
               onChange={(date: Date) => field.onChange(date)}
               timeInputLabel="Time:"
               dateFormat={props.dateFormat ?? "MM/dd/yyyy"}
-              wrapperClassName="date-picker"
+            //   wrapperClassName="date-picker"
             />
           </FormControl>
         </div>

@@ -28,6 +28,7 @@
     "@sentry/nextjs": "^8.19.0",
     "@stripe/stripe-js": "^4.3.0",
     "@tanstack/react-table": "^8.19.3",
+    "@vercel/speed-insights": "^1.0.12",
     "appwrite": "^15.0.0",
     "axios": "^1.7.3",
     "calendar-link": "^2.7.0",

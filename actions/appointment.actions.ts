@@ -112,7 +112,6 @@ export const updateAppointment = async ({
       appointmentId,
       appointment,
     )
-
     if (!updateAppointment) throw Error;
     revalidatePath("/admin");
     revalidatePath("/patients");
